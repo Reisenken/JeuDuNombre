@@ -2,7 +2,7 @@ var NombreEssais = 10;
 
 /* Générer le chiffre de l'IA */
 
-var IA = Math.ceil(Math.random()*100 + 0.001);
+var IA = Math.ceil((Math.random() + 0.001) * 100);
 console.log(IA);
 
 /* Masquer le bouton "Rejouer" de base et indiquer le nombre d'essais */
