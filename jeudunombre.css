@@ -1,0 +1,21 @@
+#Body {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.form-group {
+    text-align: center;
+    margin: 15px;
+}
+.h3 {
+    margin-top: 3em;
+    border: 2px solid red;
+}
+
+#bouton {
+    margin-top: 10px;
+}
+
+.form-group {
+    display: flex;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Jeu du Nombre !</title>
+    <link rel="stylesheet" href="jeudunombre.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body id="Body">
+<section class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <h1> Tentez de deviner mon nombre en 10 essais ! </h1>
+        </div>
+    </div>
+
+    <div class="col-md-12 h3">
+        <h3> Entrez votre proposition :</h3>
+    </div>
+
+    <div class="row col-md-12">
+        <div class="form-group col-md-12">
+            <label for="proposition"> Votre proposition : un nombre en 1 et 100.</label>
+            <input type="text" class="form-control" id="proposition" aria-describedby="choixjoueur" placeholder="Saisissez votre Nombre.">
+            <div class="col-md-6">
+                <button id="bouton" class="btn btn-dark"> Proposer : </button>
+            </div>
+            <div id="NombreEssai">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <button id="Reinitialiser" class="btn btn-dark"> Rejouer? </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p> Vous avez déjà proposé : </p>
+        </div>
+        <div class="col-md-4" id="Affiche">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<script src="jeudunombre.js"></script>
+</body>
+</html>
