@@ -28,7 +28,7 @@ document.getElementById("NombreEssai").innerHTML = ("Nombre d'essais restants" +
             document.getElementById("Affiche").innerHTML = "";
         }
 
-        if (IA > joueur) {
+         else if (IA > joueur) {
                 alert("Perdu, le chiffre est plus grand.");
                 console.log(joueur);
                 NombreEssais--;
