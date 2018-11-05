@@ -22,31 +22,26 @@ document.getElementById("NombreEssai").innerHTML = ("Nombre d'essais restants" +
 
         /* Comparaison des nombres */
 
+        if (NombreEssais === 0) {
+            alert("Partie Terminée !");
+            document.getElementById("Reinitialiser").style.opacity = "1";
+            document.getElementById("Affiche").innerHTML = "";
+        }
+
         if (IA > joueur) {
-            if (NombreEssais === 0) {
-                alert("Partie Terminée !");
-                document.getElementById("Reinitialiser").style.opacity = "1";
-                document.getElementById("Affiche").innerHTML = "";
-            } else {
                 alert("Perdu, le chiffre est plus grand.");
                 console.log(joueur);
                 NombreEssais--;
                 document.getElementById("NombreEssai").innerHTML = ("Nombre d'essais restants" + " " + ":" + " " + NombreEssais);
                 document.getElementById("Affiche").innerHTML += joueur + "," + " ";
-            }
+
         }
         else if (IA < joueur) {
-            if (NombreEssais === 0) {
-                alert("Partie Terminée !");
-                document.getElementById("Reinitialiser").style.opacity = "1";
-                document.getElementById("Affiche").innerHTML = "";
-            } else {
                 alert("Perdu, le chiffre est plus petit.");
                 console.log(joueur);
                 NombreEssais--;
                 document.getElementById("NombreEssai").innerHTML = ("Nombre d'essais restants" + " " + ":" + " " + NombreEssais);
                 document.getElementById("Affiche").innerHTML += joueur + "," + " ";
-            }
         }
         else {
             alert("Bravo ! Vous avez trouvé le nombre" + " " + IA);
